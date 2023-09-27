@@ -1,0 +1,6 @@
+com\jsmarier\jeu21\Controller\DealerTest.class
+com\jsmarier\jeu21\Business\Hand\AbstactHandDecoratorTest.class
+com\jsmarier\jeu21\Business\Player\WinningPlayerDecoratorTest.class
+com\jsmarier\jeu21\Business\Deck\AbstractDeckDecoratorTest.class
+com\jsmarier\jeu21\Business\Player\PlayerFactoryTest.class
+com\jsmarier\jeu21\Business\Player\AbstractPlayerDecoratorTest.class

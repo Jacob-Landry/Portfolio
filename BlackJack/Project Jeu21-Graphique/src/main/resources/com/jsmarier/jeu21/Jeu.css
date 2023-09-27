@@ -1,0 +1,233 @@
+.card, .card-area {
+    -fx-border-radius: 5px;
+}
+
+.card {
+    -fx-background-size: 100%;
+    -fx-border-color: black;
+}
+
+.card-area {
+    -fx-background-color: lightgray;
+    -fx-border-color: gray;
+    -fx-border-width: 2px;
+    -fx-padding: 3px;
+    -fx-spacing: 3px;
+    -fx-alignment: center;
+}
+
+.eliminated {
+    -fx-fill: red;
+}
+
+/***************************************************
+                 CARD BACKGROUNDS
+***************************************************/
+
+.ace-spade{
+    -fx-background-image: url("img/cartes/AS_PIQUE.png");
+}
+
+.ace-heart{
+    -fx-background-image: url("img/cartes/AS_COEUR.png");
+}
+
+.ace-club{
+    -fx-background-image: url("img/cartes/AS_TREFLE.png");
+}
+
+.ace-diamond{
+    -fx-background-image: url("img/cartes/AS_CARREAU.png");
+}
+
+.deuce-spade{
+    -fx-background-image: url("img/cartes/DEUX_PIQUE.png");
+}
+
+.deuce-heart{
+    -fx-background-image: url("img/cartes/DEUX_COEUR.png");
+}
+
+.deuce-club{
+    -fx-background-image: url("img/cartes/DEUX_TREFLE.png");
+}
+
+.deuce-diamond{
+    -fx-background-image: url("img/cartes/DEUX_CARREAU.png");
+}
+
+.three-spade{
+    -fx-background-image: url("img/cartes/TROIS_PIQUE.png");
+}
+
+.three-heart{
+    -fx-background-image: url("img/cartes/TROIS_COEUR.png");
+}
+
+.three-club{
+    -fx-background-image: url("img/cartes/TROIS_TREFLE.png");
+}
+
+.three-diamond{
+    -fx-background-image: url("img/cartes/TROIS_CARREAU.png");
+}
+
+.four-spade{
+    -fx-background-image: url("img/cartes/QUATRE_PIQUE.png");
+}
+
+.four-heart{
+    -fx-background-image: url("img/cartes/QUATRE_COEUR.png");
+}
+
+.four-club{
+    -fx-background-image: url("img/cartes/QUATRE_TREFLE.png");
+}
+
+.four-diamond{
+    -fx-background-image: url("img/cartes/QUATRE_CARREAU.png");
+}
+
+.five-spade{
+    -fx-background-image: url("img/cartes/CINQ_PIQUE.png");
+}
+
+.five-heart{
+    -fx-background-image: url("img/cartes/CINQ_COEUR.png");
+}
+
+.five-club{
+    -fx-background-image: url("img/cartes/CINQ_TREFLE.png");
+}
+
+.five-diamond{
+    -fx-background-image: url("img/cartes/CINQ_CARREAU.png");
+}
+
+.six-spade{
+    -fx-background-image: url("img/cartes/SIX_PIQUE.png");
+}
+
+.six-heart{
+    -fx-background-image: url("img/cartes/SIX_COEUR.png");
+}
+
+.six-club{
+    -fx-background-image: url("img/cartes/SIX_TREFLE.png");
+}
+
+.six-diamond{
+    -fx-background-image: url("img/cartes/SIX_CARREAU.png");
+}
+
+.seven-spade{
+    -fx-background-image: url("img/cartes/SEPT_PIQUE.png");
+}
+
+.seven-heart{
+    -fx-background-image: url("img/cartes/SEPT_COEUR.png");
+}
+
+.seven-club{
+    -fx-background-image: url("img/cartes/SEPT_TREFLE.png");
+}
+
+.seven-diamond{
+    -fx-background-image: url("img/cartes/SEPT_CARREAU.png");
+}
+
+.eight-spade{
+    -fx-background-image: url("img/cartes/HUIT_PIQUE.png");
+}
+
+.eight-heart{
+    -fx-background-image: url("img/cartes/HUIT_COEUR.png");
+}
+
+.eight-club{
+    -fx-background-image: url("img/cartes/HUIT_TREFLE.png");
+}
+
+.eight-diamond{
+    -fx-background-image: url("img/cartes/HUIT_CARREAU.png");
+}
+
+.nine-spade{
+    -fx-background-image: url("img/cartes/NEUF_PIQUE.png");
+}
+
+.nine-heart{
+    -fx-background-image: url("img/cartes/NEUF_COEUR.png");
+}
+
+.nine-club{
+    -fx-background-image: url("img/cartes/NEUF_TREFLE.png");
+}
+
+.nine-diamond {
+    -fx-background-image: url("img/cartes/NEUF_CARREAU.png");
+}
+
+.ten-spade{
+    -fx-background-image: url("img/cartes/DIX_PIQUE.png");
+}
+
+.ten-heart{
+    -fx-background-image: url("img/cartes/DIX_COEUR.png");
+}
+
+.ten-club{
+    -fx-background-image: url("img/cartes/DIX_TREFLE.png");
+}
+
+.ten-diamond{
+    -fx-background-image: url("img/cartes/DIX_CARREAU.png");
+}
+
+.jack-spade{
+    -fx-background-image: url("img/cartes/VALET_PIQUE.png");
+}
+
+.jack-heart{
+    -fx-background-image: url("img/cartes/VALET_COEUR.png");
+}
+
+.jack-club{
+    -fx-background-image: url("img/cartes/VALET_TREFLE.png");
+}
+
+.jack-diamond{
+    -fx-background-image: url("img/cartes/VALET_CARREAU.png");
+}
+
+.queen-spade{
+    -fx-background-image: url("img/cartes/REINE_PIQUE.png");
+}
+
+.queen-heart{
+    -fx-background-image: url("img/cartes/REINE_COEUR.png");
+}
+
+.queen-club{
+    -fx-background-image: url("img/cartes/REINE_TREFLE.png");
+}
+
+.queen-diamond{
+    -fx-background-image: url("img/cartes/REINE_CARREAU.png");
+}
+
+.king-spade{
+    -fx-background-image: url("img/cartes/ROI_PIQUE.png");
+}
+
+.king-heart{
+    -fx-background-image: url("img/cartes/ROI_COEUR.png");
+}
+
+.king-club{
+    -fx-background-image: url("img/cartes/ROI_TREFLE.png");
+}
+
+.king-diamond{
+    -fx-background-image: url("img/cartes/ROI_CARREAU.png");
+}

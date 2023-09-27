@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1288.0" stylesheets="@Jeu.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jsmarier.jeu21.Controller.GameGraphicalController">
+   <children>
+      <HBox fx:id="player1CardArea" layoutX="14.0" layoutY="36.0" prefHeight="170.0" prefWidth="609.0" styleClass="card-area">
+         <children>
+            <Pane prefHeight="160.0" prefWidth="115.0" styleClass="card" />
+         </children></HBox>
+      <HBox fx:id="player2CardArea" layoutX="665.0" layoutY="35.0" prefHeight="170.0" prefWidth="609.0" styleClass="card-area" />
+      <Text fx:id="player2Name" layoutX="1047.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER2" textAlignment="RIGHT" wrappingWidth="226.458984375" />
+      <HBox fx:id="player3CardArea" layoutX="14.0" layoutY="316.0" prefHeight="170.0" prefWidth="609.0" styleClass="card-area" />
+      <HBox fx:id="player4CardArea" layoutX="665.0" layoutY="316.0" prefHeight="170.0" prefWidth="609.0" styleClass="card-area" />
+      <Text fx:id="player1Name" layoutX="14.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER1" wrappingWidth="226.45898437499955" />
+      <Text fx:id="player3Name" layoutX="14.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER3" wrappingWidth="226.45898437499955" />
+      <Text fx:id="player4Name" layoutX="1047.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER4" textAlignment="RIGHT" wrappingWidth="226.45898437499977" />
+      <HBox alignment="CENTER" fillHeight="false" layoutX="354.0" layoutY="227.0" prefHeight="17.0" prefWidth="583.0" spacing="5.0">
+         <children>
+            <Label text="Current Player:" />
+            <Text fx:id="currentPlayerText" strokeType="OUTSIDE" strokeWidth="0.0" text="CURRENTPLAYER" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="545.0" layoutY="244.0" prefHeight="40.0" prefWidth="200.0" spacing="15.0">
+         <children>
+            <Button fx:id="hitButton" mnemonicParsing="false" onAction="#hitButtonClickAction" text="Hit">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="standButton" mnemonicParsing="false" onAction="#standButtonClickAction" text="Stand">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
