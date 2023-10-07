@@ -53,7 +53,7 @@
                   <Font name="Arial" size="12.0" />
                </font>
             </TextField>
-            <Button id="menuCreerFacture" fx:id="boutonCreerFacture" layoutX="150.0" layoutY="313.0" mnemonicParsing="false" onAction="#creerFacture" style="-fx-text-fill: #302F2D; -fx-background-color: #D3E2E3;" text="Créer la facture" textFill="#302f2d">
+            <Button id="menuCreerFacture" fx:id="boutonCreerFacture" layoutX="150.0" layoutY="328.0" mnemonicParsing="false" onAction="#creerFacture" style="-fx-text-fill: #302F2D; -fx-background-color: #D3E2E3;" text="Créer la facture" textFill="#302f2d">
                <font>
                   <Font name="Arial" size="12.0" />
                </font>
@@ -93,7 +93,7 @@
                   <Font name="Arial" size="12.0" />
                </font>
             </Label>
-            <MenuButton id="menuModePaiement" fx:id="menuMethodePaiement" layoutX="96.0" layoutY="238.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="216.0" style="-fx-text-fill: #302F2D; -fx-background-color: #D3E2E3;" text="Sélectionner le mode de paiement" textFill="#302f2d">
+            <MenuButton id="menuModePaiement" fx:id="menuMethodePaiement" layoutX="96.0" layoutY="253.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="216.0" style="-fx-text-fill: #302F2D; -fx-background-color: #D3E2E3;" text="Sélectionner le mode de paiement" textFill="#302f2d">
               <items>
                 <MenuItem fx:id="CARTEDECREDIT" mnemonicParsing="false" text="Carte de crédit" />
                 <MenuItem fx:id="CARTEDEDEBIT" mnemonicParsing="false" text="Carte de débit" />
@@ -103,12 +103,12 @@
                   <Font name="Arial" size="12.0" />
                </font>
             </MenuButton>
-            <Label layoutX="41.0" layoutY="273.0" style="-fx-text-fill: #302F2D;" text="Total taxes incluses" textFill="#302f2d">
+            <Label layoutX="41.0" layoutY="288.0" style="-fx-text-fill: #302F2D;" text="Total taxes incluses" textFill="#302f2d">
                <font>
                   <Font name="Arial" size="12.0" />
                </font>
             </Label>
-            <Text fx:id="totalAvecTaxes" fill="#302f2d" layoutX="164.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-fill: #302F2D;" text="0,00 $ " wrappingWidth="68.0">
+            <Text fx:id="totalAvecTaxes" fill="#302f2d" layoutX="164.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-fill: #302F2D;" text="0,00 $ " wrappingWidth="68.0">
                <font>
                   <Font name="Arial" size="12.0" />
                </font>
@@ -123,14 +123,29 @@
                   <Font name="Arial" size="16.0" />
                </font>
             </Text>
-            <Text fill="#302f2d" layoutX="105.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-fill: #302F2D;" text="Total des dons accumulés">
+            <Text fill="#302f2d" layoutX="61.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-fill: #302F2D;" text="Total des dons accumulés" textAlignment="CENTER" wrappingWidth="106.0">
                <font>
-                  <Font name="Arial" size="16.0" />
+                  <Font name="Arial" size="12.0" />
                </font>
             </Text>
-            <Text id="totalDons" fx:id="totalDesDons" fill="#302f2d" layoutX="160.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-fill: #302F2D;" text="0,00$" wrappingWidth="86.0">
+            <Text id="totalDons" fx:id="totalDesDons" fill="#302f2d" layoutX="71.0" layoutY="433.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-fill: #302F2D;" text="0,00$" textAlignment="CENTER" wrappingWidth="86.0">
                <font>
                   <Font name="Arial" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#302f2d" layoutX="233.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-fill: #302F2D;" text="Pourcentages de dons" textAlignment="CENTER" wrappingWidth="106.0">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Text>
+            <Text id="totalDons" fx:id="pourcentagesDeDons" fill="#302f2d" layoutX="243.0" layoutY="433.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-fill: #302F2D;" text="0,00%" textAlignment="CENTER" wrappingWidth="86.0">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Text>
+            <Text id="messageErreur" fx:id="messageErreur" fill="#d02323" layoutX="48.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="JUSTIFY" wrappingWidth="265.0">
+               <font>
+                  <Font name="Arial" size="12.0" />
                </font>
             </Text>
       </children>

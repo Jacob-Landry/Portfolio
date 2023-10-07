@@ -29,3 +29,7 @@ body
 {
     background-color:   #D3E2E3;
 }
+#messageErreur
+{
+    text-fill: #d02323;
+}

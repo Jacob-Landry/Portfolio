@@ -22,7 +22,6 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 //Développeur ayant travailler sur ce projet. Moi: Jacob Landry et Une coéquipière: Dorine Morin
-
 public class ControleurSystemeFacturation extends Application {
 
     private Magasin magasin;
@@ -60,23 +59,38 @@ public class ControleurSystemeFacturation extends Application {
     private Text totalDesDons;
 
     @FXML
+    private Text pourcentagesDeDons;
+    @FXML
+    private Text messageErreur;
+
+
+    @FXML
     void creerFacture(ActionEvent event) {
-        //Création facture
-        String prenom = champsPrenom.getText();
-        String nom = champsNom.getText();
-        double totalAvantTaxes = Double.parseDouble(champsTotalAvantTaxes.getText());
-        double totalDesTaxes = Double.parseDouble(champsTotalDesTaxes.getText());
-        String modeDePaiement = menuMethodePaiement.getText();
-        System.out.println(modeDePaiement);
+        //Verification
+        if (Double.parseDouble(champsTotalAvantTaxes.getText()) < 0.00 || Double.parseDouble(champsTotalDesTaxes.getText()) < 0.00) {
+            this.messageErreur.setText("Le total avant taxes et le montant des taxes doivent être des nombres positifs");
 
-        this.magasin.ajouterFacture(comptable.creerNouvelleFacture(prenom + " " + nom, totalAvantTaxes, totalDesTaxes, new ModeDePaiementFactory().creerModeDePaiement(modeDePaiement)));
-        this.totalAvecTaxes.setText(magasin.getListeDeFactures().get(magasin.getListeDeFactures().size()-1).getTotalAvecTaxes());
+        } else {
+            this.messageErreur.setText("");
+            //Création facture
+            String prenom = champsPrenom.getText();
+            String nom = champsNom.getText();
+            double totalAvantTaxes = Double.parseDouble(champsTotalAvantTaxes.getText());
+            double totalDesTaxes = Double.parseDouble(champsTotalDesTaxes.getText());
+            String modeDePaiement = menuMethodePaiement.getText();
 
-        //Mise à jour des dons
-        String totalDesDons = String.valueOf(magasin.getTotalDesDons()).replace(".", ",") + "$";
+            this.magasin.ajouterFacture(comptable.creerNouvelleFacture(prenom + " " + nom, totalAvantTaxes, totalDesTaxes, new ModeDePaiementFactory().creerModeDePaiement(modeDePaiement)));
+            this.totalAvecTaxes.setText(magasin.getListeDeFactures().get(magasin.getListeDeFactures().size() - 1).getTotalAvecTaxes());
 
-        this.totalAvecTaxes.setText(magasin.getListeDeFactures().get(magasin.getListeDeFactures().size() - 1).getTotalAvecTaxes());
-        this.totalDesDons.setText(totalDesDons);
+            //Mise à jour des dons
+            String totalDesDons = String.valueOf(magasin.getTotalDesDons()).replace(".", ",") + "$";
+            String pourcentagesDeDons = String.valueOf(magasin.getPourcentageDesDons()).replace(".", ",") + "%";
+
+
+            this.totalAvecTaxes.setText(magasin.getListeDeFactures().get(magasin.getListeDeFactures().size() - 1).getTotalAvecTaxes());
+            this.totalDesDons.setText(totalDesDons);
+            this.pourcentagesDeDons.setText(pourcentagesDeDons);
+        }
     }
 
     @FXML
@@ -109,8 +123,6 @@ public class ControleurSystemeFacturation extends Application {
         primaryStage.show();
 
     }
-
-
 
 
 }

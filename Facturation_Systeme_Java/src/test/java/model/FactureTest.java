@@ -35,6 +35,6 @@ class FactureTest {
         factureSousTest.mettreAJourLeTotalAvecTaxes();
 
         //Alors
-        assertThat(factureSousTest.getTotalAvecTaxes()).isEqualTo("60,50");
+        assertThat(factureSousTest.getTotalAvecTaxes()).isEqualTo("60.50");
     }
 }
