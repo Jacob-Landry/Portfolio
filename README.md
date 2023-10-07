@@ -20,7 +20,7 @@ githubUsername: 'Jacob-Landry'
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <p align="center">
-	<a href="https://github.com/AVS1508">
+	<a href="https://github.com/Jacob-Landry">
 		<img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Jacob-Landry&layout=compact&theme=vue-dark" />
 	</a>
 </p>
