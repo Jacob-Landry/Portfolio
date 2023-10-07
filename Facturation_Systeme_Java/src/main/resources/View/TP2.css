@@ -1,0 +1,31 @@
+*
+{
+    color:  #302F2D;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+body
+{
+    background-color:  #B2BEBF;
+}
+
+#nomMagasin
+{   
+    font-size: 22px; 
+}
+
+.sousTitre
+{
+    font-size: 16px;
+}
+
+#totalDons
+{
+    font-size: 20px; 
+}
+
+#menuModePaiement
+{
+    background-color:   #D3E2E3;
+}
