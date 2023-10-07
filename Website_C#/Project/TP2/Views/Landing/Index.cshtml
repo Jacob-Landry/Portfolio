@@ -1,0 +1,61 @@
+﻿@{
+    ViewData["Title"] = "Landing";
+}
+
+<div class="text-center text-white pt-5">
+    <h1>TopGames</h1>
+</div>
+<div class="align-items-center mt-5 no-gutters">
+    <div class="align-middle mx-auto col-8 col-md-6 col-lg-4">
+        <!-- Form -->
+        <form class="form-example bg-dark p-5 rounded-3 bg-opacity-75" asp-controller="" asp-action="" method="post">
+            <h2 class="text-white">Connexion ou Inscription</h2>
+            <p class="description">
+                
+            </p>
+            <!-- Input fields -->
+            <div class="form-group mb-3">
+                <label class="mb-1 text-white" for="username">Nom d'utilisateur:</label>
+                <input type="text"
+                       class="form-control username"
+                       id="username"
+                       placeholder="Nom d'utilisateur"
+                       name="username" />
+            </div>
+            <div class="form-group">
+                <label class="mb-1 text-white" for="password">Mot de passe:</label>
+                <input type="password"
+                       class="form-control password"
+                       id="password"
+                       placeholder="Mot de passe"
+                       name="password" />
+            </div>
+            <div p-auto">
+                @{
+                    if(ViewBag.MessageErreur is not null)
+                    {
+                        List<string> listeMessageErreur = ViewBag.MessageErreur;
+                        foreach(string message in listeMessageErreur)
+                        {
+                            <p class="text-danger m-0">@message</p>
+                        }
+                    }
+                    
+                }
+                </div>
+            <div class="d-flex mb-2 mt-4">
+                <button asp-action="Login" type="submit" class="btn btn-primary btn-customized me-2 flex-grow-1">
+                    Connexion
+                </button>
+                <button asp-action="Register" type="submit" class="btn btn-primary btn-customized flex-grow-1">
+                    Inscription
+                </button>
+            </div>
+            <p><a href="#!">Mot de passe oublié?</a></p>
+            
+        </form>
+        <!-- Form end -->
+    </div>
+</div>
+
+

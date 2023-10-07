@@ -1,0 +1,91 @@
+﻿@using GameReview.Models;
+@using GameReview.Models.Enums
+@{
+    ViewData["Title"] = Model.Item2.NomDuJeu;
+}
+@model Tuple<UtilisateurModel, JeuModel>;
+
+<div class="bg-dark text-primary p-2 mt-2 mb-1 h3 d-flex justify-content-between align-items-center rounded">
+    <p class="d-flex m-0">@Model.Item2.NomDuJeu</p>
+    <form asp-action="ToggleFav" asp-route-gameName="@Model.Item2.NomDuJeu">
+        <button class="btn p-0 fs-3">
+            @if (Model.Item1.Favoris.Any(x => x.NomDuJeu.ToLower() == Model.Item2.NomDuJeu.ToLower()))
+            {
+                <i class="bi bi-star-fill text-warning"></i>
+            }
+            else
+            {
+                <i class="bi bi-star text-white"></i>
+            }
+        </button>
+    </form>
+</div>
+<div class="p-2 my-1">
+    <img src="@Url.Content($"..\\assets\\games\\{Model.Item2.NomDuJeu}\\medium.png")" class="d-block w-100" alt="..." style="object-fit: cover">
+</div>
+<div class="bg-dark text-primary p-3 h3 mt-1 mb-0 text-center h3 p-1 rounded-top">Détails</div>
+<div class="mb-1 bg-black bg-opacity-50 p-2 rounded-bottom">
+    <table class="table text-primary p-2">
+        <thead>
+            <tr>
+                <th>
+                    Titres
+                </th>
+                <th>
+                    Information
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Date de sortie</td>
+                <td colspan="2">@Model.Item2.DateDeSortie</td>
+            </tr>
+            <tr>
+                <td>Prix</td>
+                <td colspan="2">$@Model.Item2.Prix USD</td>
+            </tr>
+            <tr>
+                <td>Studio</td>
+                <td colspan="2">@Model.Item2.StudioDeDeveloppement.Nom</td>
+            </tr>
+            <tr>
+                <td>Éditeur</td>
+                <td colspan="2">@Model.Item2.Editeur.Nom</td>
+            </tr>
+            <tr>
+                <td>Langages</td>
+                <td colspan="2">
+                    @string.Join(", ", Model.Item2.LangagesDuJeu)
+                </td>
+            </tr>
+            <tr>
+                <td>Genres</td>
+                <td>
+                    @string.Join(", ", Model.Item2.GenresDuJeu)
+                </td>
+            </tr>
+            <tr>
+                <td>DLC</td>
+                @if (@Model.Item2.ContientDuContenuSupplementaire)
+                {
+                    <td class="py-2 my-auto">Présent</td>
+                } else
+                {
+                    <td class="py-2 my-auto">Aucun</td>
+                }
+
+                @if (TempData["role"].ToString() == "ADMINISTRATEUR")
+                {
+                    <td class="d-flex flex-row-reverse py-1">
+                        <form asp-controller="Home" asp-action="changerDLC"  asp-route-gameName="@Model.Item2.NomDuJeu"> 
+                        <button class="btn btn-primary btn-customized flex-grow-1" type="submit">Toggle DLC</button>
+                        </form>
+                    </td>
+                    
+                }
+            </tr>
+        </tbody>
+    </table>
+</div>

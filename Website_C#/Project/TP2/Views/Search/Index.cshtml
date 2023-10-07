@@ -1,0 +1,28 @@
+﻿@using GameReview.Models;
+@model GameReview.Models.CatalogueModel
+
+@{
+    ViewData["Title"] = "Search";
+}
+@if (Model is not null)
+{
+    <table class="table p-2 my-1 mt-2">
+        <thead>
+            <tr>
+                <td>
+                    <h4 class="text-primary">@Model.NomCatalogue</h4>
+                </td>
+            </tr>
+        </thead>
+    </table>
+    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 p-2 overflow-auto">
+        @foreach (var game in Model.ListeDeJeux)
+        {
+            await Html.RenderPartialAsync("/Views/Shared/_GameCard.cshtml", game);
+        }
+    </div>
+}
+else
+{
+    <h4>Aucun résultats</h4>
+}

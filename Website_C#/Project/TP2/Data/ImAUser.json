@@ -1,0 +1,67 @@
+{
+  "Uuid": "00000000-0000-0000-0000-000000000000",
+  "Login": "ImAUser",
+  "MotDePasse": "Passw0rd!",
+  "Nom": "",
+  "Prenom": "",
+  "Role": 3,
+  "Favoris": [
+    {
+      "NomDuJeu": "Lost Ark",
+      "GenresDuJeu": [
+        0,
+        3,
+        2
+      ],
+      "CaracteristiquesDuJeu": [
+        1,
+        4,
+        3,
+        0
+      ],
+      "LangagesDuJeu": [
+        0,
+        1
+      ],
+      "DateDeSortie": "2022-02-11T00:00:00",
+      "StudioDeDeveloppement": {
+        "Nom": "SmileGate",
+        "Description": "Smilegate est un d\u00E9veloppeur et \u00E9diteur de jeu vid\u00E9o sud-cor\u00E9en. Il comprend cinq secteurs d\u0027activit\u00E9 principaux : le d\u00E9veloppement de jeux, l\u0027\u00E9dition, la plate-forme, l\u0027investissement et la contribution sociale."
+      },
+      "Editeur": {
+        "Nom": "Amazon Games",
+        "Description": "Amazon Games est une division de la soci\u00E9t\u00E9 de vente en ligne Amazon qui se concentre sur le d\u00E9veloppement de jeux vid\u00E9o."
+      },
+      "Prix": 0,
+      "ContientDuContenuSupplementaire": true
+    },
+    {
+      "NomDuJeu": "Diablo 3",
+      "GenresDuJeu": [
+        0,
+        3
+      ],
+      "CaracteristiquesDuJeu": [
+        1,
+        4,
+        2
+      ],
+      "LangagesDuJeu": [
+        0,
+        1
+      ],
+      "DateDeSortie": "2012-05-12T00:00:00",
+      "StudioDeDeveloppement": {
+        "Nom": "Blizzard Team",
+        "Description": "Chez Blizzard Entertainment, nous mettons notre passion au service du processus cr\u00E9atif. Chaque jour, c\u2019est guid\u00E9s par nos valeurs que nous continuons \u00E0 mettre au point des exp\u00E9riences ludiques l\u00E9gendaires pour tous nos joueurs."
+      },
+      "Editeur": {
+        "Nom": "Blizzard Entertainment",
+        "Description": "Chez Blizzard Entertainment, nous mettons notre passion au service du processus cr\u00E9atif. Chaque jour, c\u2019est guid\u00E9s par nos valeurs que nous continuons \u00E0 mettre au point des exp\u00E9riences ludiques l\u00E9gendaires pour tous nos joueurs."
+      },
+      "Prix": 24.99,
+      "ContientDuContenuSupplementaire": true
+    }
+  ],
+  "Evaluations": []
+}

@@ -1,0 +1,25 @@
+﻿@model GameReview.Models.JeuModel
+
+<div class="col" style="height: 450px">
+    <div class="card h-100 border-0">
+        <div class="bg-dark h-100">
+            <img src="@Url.Content($"..\\assets\\games\\{Model.NomDuJeu}\\small.png")" class="card-img-top opacity-50  h-100" alt="..." style="object-fit: cover">
+        </div>
+        <div class="card-img-overlay text-white d-flex flex-column justify-content-end">
+            <div class="d-flex justify-content-between align-content-center">
+                <h5 class="card-title fw-bolder">@Model.NomDuJeu</h5>
+                <form asp-controller="Home" asp-action="Game" asp-route-gameName="@Model.NomDuJeu">
+                    <button class="align-content-center border-0 bg-transparent fs-5">
+                        <i class="m-auto bi bi-box-arrow-in-right text-white"></i>
+                    </button>
+                </form>
+            </div>
+            <p class="card-text mb-1">@Model.StudioDeDeveloppement.Nom</p>
+            <div class="card-footer mb-0 p-0 justify-content-between align-content-center">
+                <p class="mb-0">
+                    @string.Join(" / ", Model.CaracteristiquesDuJeu.Select(x => x.ToString()).ToArray())
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

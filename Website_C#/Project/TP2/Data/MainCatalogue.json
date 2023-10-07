@@ -1,0 +1,284 @@
+{
+  "NomCatalogue": "catalogueTP1",
+  "ListeDeJeux": [
+    {
+      "NomDuJeu": "Stray",
+      "GenresDuJeu": [
+        1,
+        2,
+        4
+      ],
+      "CaracteristiquesDuJeu": [
+        1,
+        4
+      ],
+      "LangagesDuJeu": [
+        0,
+        1
+      ],
+      "DateDeSortie": "2022-06-19T00:00:00",
+      "StudioDeDeveloppement": {
+        "Nom": "BlueTwelve Stdio",
+        "Description": "BlueTwelve Studio is a small game development team hailing from Montpellier, Occitanie, southern France."
+      },
+      "Editeur": {
+        "Nom": "Annapurna Interactive",
+        "Description": "Annapurna Interactive, nom commercial de Annapurna Games, LLC est une filiale d\u2019Annapurna Pictures et un \u00E9diteur de jeux vid\u00E9o."
+      },
+      "Prix": 39.990000000000002,
+      "ContientDuContenuSupplementaire": false
+    },
+    {
+      "NomDuJeu": "Warframe",
+      "GenresDuJeu": [
+        0,
+        2,
+        3
+      ],
+      "CaracteristiquesDuJeu": [
+        1,
+        2,
+        4
+      ],
+      "LangagesDuJeu": [
+        0,
+        1
+      ],
+      "DateDeSortie": "2013-03-25T00:00:00",
+      "StudioDeDeveloppement": {
+        "Nom": "Digital Extreme",
+        "Description": "Digital Extremes est un studio de d\u00E9veloppement de jeux vid\u00E9o canadien fond\u00E9 en 1993 par James Schmalz, et bas\u00E9 \u00E0 London en Ontario."
+      },
+      "Editeur": {
+        "Nom": "Digital Extreme",
+        "Description": "Digital Extremes est un studio de d\u00E9veloppement de jeux vid\u00E9o canadien fond\u00E9 en 1993 par James Schmalz, et bas\u00E9 \u00E0 London en Ontario."
+      },
+      "Prix": 0,
+      "ContientDuContenuSupplementaire": false
+    },
+    {
+      "NomDuJeu": "Elden Ring",
+      "GenresDuJeu": [
+        1,
+        2,
+        3
+      ],
+      "CaracteristiquesDuJeu": [
+        1,
+        2,
+        4,
+        3
+      ],
+      "LangagesDuJeu": [
+        0,
+        1
+      ],
+      "DateDeSortie": "2022-02-25T00:00:00",
+      "StudioDeDeveloppement": {
+        "Nom": "FromSoftware",
+        "Description": "Elle est notamment connue pour avoir cr\u00E9\u00E9 les s\u00E9ries Dark Souls et Armored Core, ou encore les jeux Bloodborne, Sekiro: Shadows Die Twice et Elden Ring."
+      },
+      "Editeur": {
+        "Nom": "Bandai Namco Entertainment",
+        "Description": "Bandai Namco Entertainment Inc. est une entreprise japonaise, cr\u00E9\u00E9e le 31 mars 2006, qui \u00E9tablit son domaine d\u0027activit\u00E9 dans le secteur du d\u00E9veloppement et de la commercialisation de jeux vid\u00E9o d\u0027arcade et de salon, ainsi que sur t\u00E9l\u00E9phones portables."
+      },
+      "Prix": 79.989999999999995,
+      "ContientDuContenuSupplementaire": false
+    },
+    {
+      "NomDuJeu": "Destiny 2",
+      "GenresDuJeu": [
+        0,
+        2,
+        3
+      ],
+      "CaracteristiquesDuJeu": [
+        1,
+        0,
+        4,
+        3
+      ],
+      "LangagesDuJeu": [
+        0,
+        1
+      ],
+      "DateDeSortie": "2017-09-06T00:00:00",
+      "StudioDeDeveloppement": {
+        "Nom": "Bungie",
+        "Description": "Bungie Studios est une soci\u00E9t\u00E9 de d\u00E9veloppement et d\u0027\u00E9dition de jeux vid\u00E9o, fond\u00E9e en 1991 sous le nom Bungie Software Products Corporation."
+      },
+      "Editeur": {
+        "Nom": "Bungie",
+        "Description": "Bungie Studios est une soci\u00E9t\u00E9 de d\u00E9veloppement et d\u0027\u00E9dition de jeux vid\u00E9o, fond\u00E9e en 1991 sous le nom Bungie Software Products Corporation."
+      },
+      "Prix": 79.989999999999995,
+      "ContientDuContenuSupplementaire": true
+    },
+    {
+      "NomDuJeu": "Borderlands 3",
+      "GenresDuJeu": [
+        0,
+        2,
+        3
+      ],
+      "CaracteristiquesDuJeu": [
+        1,
+        2,
+        4
+      ],
+      "LangagesDuJeu": [
+        0,
+        1
+      ],
+      "DateDeSortie": "2019-09-19T00:00:00",
+      "StudioDeDeveloppement": {
+        "Nom": "Gearbox Software",
+        "Description": "Gearbox Software est un studio am\u00E9ricain de d\u00E9veloppement de jeux vid\u00E9o fond\u00E9 en 1999 et localis\u00E9 \u00E0 Frisco pr\u00E8s de Dallas."
+      },
+      "Editeur": {
+        "Nom": "2K",
+        "Description": "2K Games est une entreprise sp\u00E9cialis\u00E9e dans l\u0027\u00E9dition de jeu vid\u00E9o. L\u0027entreprise est une filiale de Take-Two Interactive, qui poss\u00E8de \u00E9galement le studio Rockstar Games."
+      },
+      "Prix": 79.989999999999995,
+      "ContientDuContenuSupplementaire": false
+    },
+    {
+      "NomDuJeu": "Diablo 3",
+      "GenresDuJeu": [
+        0,
+        3
+      ],
+      "CaracteristiquesDuJeu": [
+        1,
+        4,
+        2
+      ],
+      "LangagesDuJeu": [
+        0,
+        1
+      ],
+      "DateDeSortie": "2012-05-12T00:00:00",
+      "StudioDeDeveloppement": {
+        "Nom": "Blizzard Team",
+        "Description": "Chez Blizzard Entertainment, nous mettons notre passion au service du processus cr\u00E9atif. Chaque jour, c\u2019est guid\u00E9s par nos valeurs que nous continuons \u00E0 mettre au point des exp\u00E9riences ludiques l\u00E9gendaires pour tous nos joueurs."
+      },
+      "Editeur": {
+        "Nom": "Blizzard Entertainment",
+        "Description": "Chez Blizzard Entertainment, nous mettons notre passion au service du processus cr\u00E9atif. Chaque jour, c\u2019est guid\u00E9s par nos valeurs que nous continuons \u00E0 mettre au point des exp\u00E9riences ludiques l\u00E9gendaires pour tous nos joueurs."
+      },
+      "Prix": 24.989999999999998,
+      "ContientDuContenuSupplementaire": true
+    },
+    {
+      "NomDuJeu": "Stardew Valley",
+      "GenresDuJeu": [
+        1,
+        2,
+        4
+      ],
+      "CaracteristiquesDuJeu": [
+        1,
+        2
+      ],
+      "LangagesDuJeu": [
+        0,
+        1
+      ],
+      "DateDeSortie": "2016-02-16T00:00:00",
+      "StudioDeDeveloppement": {
+        "Nom": "ConcernedApe",
+        "Description": "Eric Barone, n\u00E9 le 3 d\u00E9cembre 1987 et \u00E9galement connu sous son pseudonyme ConcernedApe, est un d\u00E9veloppeur de jeux vid\u00E9o, concepteur de jeux vid\u00E9o."
+      },
+      "Editeur": {
+        "Nom": "ConcernedApe",
+        "Description": "Eric Barone, n\u00E9 le 3 d\u00E9cembre 1987 et \u00E9galement connu sous son pseudonyme ConcernedApe, est un d\u00E9veloppeur de jeux vid\u00E9o, concepteur de jeux vid\u00E9o."
+      },
+      "Prix": 16.989999999999998,
+      "ContientDuContenuSupplementaire": false
+    },
+    {
+      "NomDuJeu": "Lost Ark",
+      "GenresDuJeu": [
+        0,
+        3,
+        2
+      ],
+      "CaracteristiquesDuJeu": [
+        1,
+        4,
+        3,
+        0
+      ],
+      "LangagesDuJeu": [
+        0,
+        1
+      ],
+      "DateDeSortie": "2022-02-11T00:00:00",
+      "StudioDeDeveloppement": {
+        "Nom": "SmileGate",
+        "Description": "Smilegate est un d\u00E9veloppeur et \u00E9diteur de jeu vid\u00E9o sud-cor\u00E9en. Il comprend cinq secteurs d\u0027activit\u00E9 principaux : le d\u00E9veloppement de jeux, l\u0027\u00E9dition, la plate-forme, l\u0027investissement et la contribution sociale."
+      },
+      "Editeur": {
+        "Nom": "Amazon Games",
+        "Description": "Amazon Games est une division de la soci\u00E9t\u00E9 de vente en ligne Amazon qui se concentre sur le d\u00E9veloppement de jeux vid\u00E9o."
+      },
+      "Prix": 0,
+      "ContientDuContenuSupplementaire": true
+    },
+    {
+      "NomDuJeu": "Hogwarts Legacy",
+      "GenresDuJeu": [
+        1,
+        3,
+        2
+      ],
+      "CaracteristiquesDuJeu": [
+        1,
+        4
+      ],
+      "LangagesDuJeu": [
+        0,
+        1
+      ],
+      "DateDeSortie": "2023-02-10T00:00:00",
+      "StudioDeDeveloppement": {
+        "Nom": "Avalanche Software",
+        "Description": "Avalanche Software est un studio de d\u00E9veloppement de jeux vid\u00E9o fond\u00E9 en octobre 1995 par quatre anciens programmeurs du studio Sculptured Software."
+      },
+      "Editeur": {
+        "Nom": "Warner Bros Games",
+        "Description": "Warner Bros. Interactive Entertainment est une filiale de Warner Bros. Entertainment sp\u00E9cialis\u00E9e dans l\u0027\u00E9dition, la conception et la distribution de jeux vid\u00E9o."
+      },
+      "Prix": 79.989999999999995,
+      "ContientDuContenuSupplementaire": false
+    },
+    {
+      "NomDuJeu": "God of war Ragnarok",
+      "GenresDuJeu": [
+        0,
+        1,
+        3
+      ],
+      "CaracteristiquesDuJeu": [
+        1,
+        4,
+        5
+      ],
+      "LangagesDuJeu": [
+        0,
+        1
+      ],
+      "DateDeSortie": "2022-11-09T00:00:00",
+      "StudioDeDeveloppement": {
+        "Nom": "Santa Monica Studio",
+        "Description": "Notre studio est compos\u00E9 d\u0027un groupe de cr\u00E9atifs diversifi\u00E9s, ambitieux et hautement collaboratifs qui se renforcent mutuellement, tout en travaillant en \u00E9quipe pour offrir des exp\u00E9riences PlayStation de haute qualit\u00E9 ax\u00E9es sur la narration."
+      },
+      "Editeur": {
+        "Nom": "Sony Interactive Entertainment",
+        "Description": "Recognized as a global leader in interactive and digital entertainment, Sony Interactive Entertainment* (SIE) is responsible for the PlayStation\u00AE brand and family of products and services. PlayStation has delivered innovation to the market since the launch of the original PlayStation in Japan in 1994."
+      },
+      "Prix": 89.989999999999995,
+      "ContientDuContenuSupplementaire": false
+    }
+  ]
+}

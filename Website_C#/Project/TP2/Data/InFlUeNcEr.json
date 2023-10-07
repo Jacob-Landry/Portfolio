@@ -1,0 +1,66 @@
+{
+  "Uuid": "00000000-0000-0000-0000-000000000000",
+  "Login": "InFlUeNcEr",
+  "MotDePasse": "Passw0rd!",
+  "Nom": "",
+  "Prenom": "",
+  "Role": 2,
+  "Favoris": [
+    {
+      "NomDuJeu": "Stray",
+      "GenresDuJeu": [
+        1,
+        2,
+        4
+      ],
+      "CaracteristiquesDuJeu": [
+        1,
+        4
+      ],
+      "LangagesDuJeu": [
+        0,
+        1
+      ],
+      "DateDeSortie": "2022-06-19T00:00:00",
+      "StudioDeDeveloppement": {
+        "Nom": "BlueTwelve Stdio",
+        "Description": "BlueTwelve Studio is a small game development team hailing from Montpellier, Occitanie, southern France."
+      },
+      "Editeur": {
+        "Nom": "Annapurna Interactive",
+        "Description": "Annapurna Interactive, nom commercial de Annapurna Games, LLC est une filiale d\u2019Annapurna Pictures et un \u00E9diteur de jeux vid\u00E9o."
+      },
+      "Prix": 39.99,
+      "ContientDuContenuSupplementaire": false
+    },
+    {
+      "NomDuJeu": "Warframe",
+      "GenresDuJeu": [
+        0,
+        2,
+        3
+      ],
+      "CaracteristiquesDuJeu": [
+        1,
+        2,
+        4
+      ],
+      "LangagesDuJeu": [
+        0,
+        1
+      ],
+      "DateDeSortie": "2013-03-25T00:00:00",
+      "StudioDeDeveloppement": {
+        "Nom": "Digital Extreme",
+        "Description": "Digital Extremes est un studio de d\u00E9veloppement de jeux vid\u00E9o canadien fond\u00E9 en 1993 par James Schmalz, et bas\u00E9 \u00E0 London en Ontario."
+      },
+      "Editeur": {
+        "Nom": "Digital Extreme",
+        "Description": "Digital Extremes est un studio de d\u00E9veloppement de jeux vid\u00E9o canadien fond\u00E9 en 1993 par James Schmalz, et bas\u00E9 \u00E0 London en Ontario."
+      },
+      "Prix": 0,
+      "ContientDuContenuSupplementaire": false
+    }
+  ],
+  "Evaluations": []
+}

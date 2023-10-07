@@ -1,0 +1,28 @@
+{
+  "Id": 0,
+  "NomDuJeu": "nomtest",
+  "GenresDuJeu": [],
+  "CaracteristiquesDuJeu": [],
+  "LangagesDuJeu": [],
+  "DateDeSortie": "0001-01-01T00:00:00",
+  "Prix": 0,
+  "ContientDuContenuSupplementaire": false,
+  "ListeDEvaluations": [],
+  "CatalogueId": 1,
+  "Catalogue": null,
+  "Utilisateur": null,
+  "StudioDeDeveloppementId": 1,
+  "StudioDeDeveloppement": {
+    "Id": 0,
+    "Nom": "Studio De Test",
+    "Description": "Description test",
+    "Jeux": []
+  },
+  "EditeurId": 1,
+  "Editeur": {
+    "Id": 0,
+    "Nom": "\u00C9diteur De Test",
+    "Description": "Description test",
+    "Jeux": []
+  }
+}

@@ -1,0 +1,66 @@
+﻿@using GameReview.Models
+@{
+    ViewData["Title"] = "Home";
+}
+@model GameReview.Models.CatalogueModel
+
+<div class="bg-dark text-primary p-3 h3 m-0 my-2 h2 rounded">Nouveautés</div>
+<div id="carouselExampleIndicators" class="carousel slide mb-2 p-2" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        @{
+            var modelList = Model.ListeDeJeux.OrderByDescending(x => x.DateDeSortie).ToList();
+        }
+        @for (int i = 0; i < 3; i++)
+        {
+            var modelLocal = modelList[i];
+            if (i == 0)
+            {
+                <div class="carousel-item active" style="height: 600px; overflow: hidden">
+                    <img src="@Url.Content($"..\\assets\\games\\{modelLocal.NomDuJeu}\\banner.png")" class="d-block w-100" alt="..." style="object-fit: cover">
+                    <a asp-controller="Home" asp-action="Game" asp-route-gameName="@modelLocal.NomDuJeu" class="carousel-caption link-light">En savoir plus</a>
+                </div>
+            }
+            else
+            {
+                <div class="carousel-item" style="height: 600px; overflow: hidden">
+                    <img src="@Url.Content($"..\\assets\\games\\{modelLocal.NomDuJeu}\\banner.png")" class="d-block w-100" alt="..." style="object-fit: cover">
+                    <a asp-controller="Home" asp-action="Game" asp-route-gameName="@modelLocal.NomDuJeu" class="carousel-caption link-light">En savoir plus</a>
+                </div>
+            }
+        }
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<div class="bg-dark text-primary p-3 h3 m-0 text-center h3 p-1 rounded">Découverte</div>
+<div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 p-2 overflow-auto">
+    @{
+        var rand = new Random();
+        modelList = Model.ListeDeJeux.OrderBy(x => rand.Next()).ToList();
+        int incremente = 0;
+    }
+    @foreach(JeuModel jeu in modelList)
+    {
+        if (incremente < 4)
+        {
+            await Html.RenderPartialAsync("/Views/Shared/_GameCard.cshtml", jeu);
+            incremente++;
+        }
+        else
+        {
+            break;
+        }
+    }
+
+</div>
