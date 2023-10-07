@@ -1,7 +1,6 @@
 ---
 title: Portfolio
 date: '2023-27-09'
-categories: ["short-and-sweet", "all-profile"]
 githubUsername: 'Jacob-Landry'
 ---
 
