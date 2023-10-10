@@ -1,3 +1,5 @@
+//Développeur ayant travailler sur ce projet. Moi: Jacob Landry et Un coéquipier: Jean Sebastien Marier
+
 package com.jsmarier.tp1;
 
 import androidx.annotation.NonNull;
