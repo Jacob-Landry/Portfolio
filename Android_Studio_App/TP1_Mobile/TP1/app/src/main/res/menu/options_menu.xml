@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/MenuVoyageurs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Voyageurs" />
+    <item
+        android:id="@+id/MenuChoixVisites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Choix des visites" />
+    <item
+        android:id="@+id/MenuVisitesConfirmees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Visites Confirmées" />
+    <item
+        android:id="@+id/MenuSondage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Sondage" />
+</menu>
